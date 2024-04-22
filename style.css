@@ -1,3 +1,4 @@
+/* Keep existing styles for PC */
 * {
     margin: 0;
     padding: 0;
@@ -92,4 +93,39 @@ body {
 
 .toast.invalid::after {
     background: orange;
+}
+
+/* Responsive styles for mobile */
+@media only screen and (max-width: 768px) {
+    .buttons {
+        margin: 20px;
+    }
+
+    .buttons button {
+        width: 100px;
+        height: 30px;
+        margin: 3px;
+        font-size: 14px;
+    }
+
+    #toastBox {
+        bottom: 10px;
+        right: 10px;
+        padding: 10px;
+    }
+
+    .toast {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .toast i {
+        font-size: 25px;
+    }
+
+    .toast::after {
+        height: 3px;
+    }
 }
